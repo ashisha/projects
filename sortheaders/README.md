@@ -7,18 +7,19 @@ Sortheaders is a Vim plugin that sorts the header files includes in a source fil
 
 Installation
 ------------
-* Use pathogen?
-Clone it from Git
-
-* Old School?
-Copy the sortheaders.vim file to your .vim/plugin directory
-
-
-Add a mapping to your ~/.vimrc file:
-  nnoremap <F9> :SortHeaders<CR>
+* Use pathogen?  
+  Clone it from Git.
+* Old School?  
+  Copy the sortheaders.vim file to your .vim/plugin directory.
 
 Usage
 -----
+Add a mapping to your ~/.vimrc file (that suits your fingers & personality):  
+  `nnoremap <F9> :SortHeaders<CR>`
+
+Make sure that filetype detection is ON. Following lines in .vimrc will help:  
+  `:filetype on`
+
 Use the SortHeaders command in normal mode or the mapped key (if you configured one) and your header includes will be sorted in-place. SortHeaders respect the grouping of various header includes, so if there is a newline between two groups of header includes, the grouping will be preserved.
 
 Yes, it's that simple!
